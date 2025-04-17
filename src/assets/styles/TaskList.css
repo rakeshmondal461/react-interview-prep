@@ -1,0 +1,51 @@
+.inputWrapper{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(231, 229, 229);
+    background-color: rgb(202, 201, 201);
+}
+.primaryTextInput{
+    width: 250px;
+    height: 28px;
+    border-radius: 3px;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    margin: 4px;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+#tasklistWrapper{
+    margin-block: 20px;
+    padding: 10px;
+    border-color: rgb(205, 213, 250);
+    background-color: rgb(187, 199, 253);
+    border-radius: 5px;
+}
+#tasklistWrapper #tasklist{
+    margin-block: 10px;
+}
+
+#tasklistWrapper #tasklist .listItem{
+    background-color: azure;
+    padding: 2px;
+    margin: 5px;
+    color: blue;
+    border-radius: 2.5px;
+}
+
+#tasklistWrapper #tasklist .listItem:hover{
+    cursor: pointer;
+    color: rgb(202, 60, 215);
+}

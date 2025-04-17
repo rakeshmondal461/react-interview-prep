@@ -4,13 +4,15 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import "./index.css";
 import App from "./App.tsx";
 import CounterComponent from "./components/CounterComponent.tsx";
+import TestParent from "./components/TestParent.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route index element={<App />} />
-        <Route path="counter" element={<CounterComponent/>} />
+        <Route path="counter" element={<CounterComponent />} />
+        <Route path="test" element={<TestParent />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

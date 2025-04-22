@@ -1,0 +1,16 @@
+.player-wrapper {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.player-wrapper .playerCard:hover {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 64, 255, 0.25);
+    box-shadow: 
+      0 0 20px rgba(0, 64, 255, 0.4),   /* thick outer glow */
+      0 0 40px rgba(0, 64, 255, 0.3),   /* soft spread */
+      inset 0 0 10px rgba(0, 64, 255, 0.1); /* inner gloss */
+    transition: box-shadow 0.3s ease;
+}

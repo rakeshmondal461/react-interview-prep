@@ -8,6 +8,7 @@ type task = {
 };
 
 const TaskList = () => {
+  throw new Error("Component render error!");
   const [taskTitle, setTaskTitle] = useState<string>("");
   const [tasks, setTasks] = useState<task[]>([]);
   const { getLocalStoreData, setLocalStoreData } = useLocalStore();
@@ -98,6 +99,7 @@ const TaskList = () => {
               className="primaryTextInput"
             />
           </div>
+          <>{JSON.parse(123 as any)}</>
           <div id="tasklist" onClick={(e) => handleItemClick(e)}>
             {tasks.map((task: task) => {
               return (
